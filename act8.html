@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TactileJr | Els 3 Porquets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="act-details-page">
+    <div class="blob blob-1"></div>
+    <header class="act-page-header">
+        <div class="container"><a href="index.html" class="back-link"><i data-lucide="arrow-left"></i>Tornar l'inici</a></div>
+    </header>
+    <main class="container">
+        <section class="act-hero reveal"><span class="act-tag">Iniciació 8</span><h1>Els 3 Porquets</h1></section>
+        <section class="act-banner reveal"><img src="Resources/act8.png" alt="Els 3 Porquets"></section>
+        <div class="act-content-grid">
+            <div class="steps-column reveal">
+                <h2>Comença la diversió!</h2>
+                <div class="steps-timeline">
+                    <div class="step-item"><div class="step-number">1</div><div class="step-info"><h5>Munta l'escena</h5><p>Col·loca el fons dels 3 porquets i ajuda'ls a preparar les cases.</p></div></div>
+                    <div class="step-item"><div class="step-number">2</div><div class="step-info"><h5>Fuig del llop!</h5><p>Programa els personatges per córrer d'una casa a l'altra abans que arribi el llop.</p></div></div>
+                    <div class="step-item"><div class="step-number">3</div><div class="step-info"><h5>Construeix amb codi</h5><p>Fes servir blocs de repetició per "posar maons" a la casa de totxo.</p></div></div>
+                    <div class="step-item"><div class="step-number">4</div><div class="step-info"><h5>Final feliç!</h5><p>Narra la història mentre els tres porquets es troben sans i estalvis.</p></div></div>
+                </div>
+            </div>
+            <aside class="act-sidebar reveal">
+                <div class="sidebar-card"><h5>Recursos Mags</h5><a href="Resources/08 ELS 3 PORQUETS.pdf" target="_blank" class="btn-download"><i data-lucide="file-text"></i>Veure PDF del Fons</a></div>
+                <div class="sidebar-card"><h5>Crèdits</h5><p style="font-size: 0.9rem; color: var(--text-light);">Activitat extreta de <a href="https://projects.tactilejr.org/" target="_blank" style="color: var(--primary); text-decoration: underline;">TactileJr Projects</a>.</p></div>
+                <div class="sidebar-card"><h5>Paraules Màgiques</h5><div class="tag-list"><span class="tag-item">Conte</span><span class="tag-item">Cases</span><span class="tag-item">Porquets</span><span class="tag-item">Lògica</span></div></div>
+            </aside>
+        </div>
+    </main>
+    <script>lucide.createIcons(); const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 }); document.querySelectorAll('.reveal').forEach(el => observer.observe(el));</script>
+</body>
+</html>

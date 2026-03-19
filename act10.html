@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TactileJr | Les Nostres Rutines</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="act-details-page">
+    <div class="blob blob-1"></div>
+    <header class="act-page-header">
+        <div class="container"><a href="index.html" class="back-link"><i data-lucide="arrow-left"></i>Tornar l'inici</a></div>
+    </header>
+    <main class="container">
+        <section class="act-hero reveal"><span class="act-tag">Iniciació 10</span><h1>Les Nostres Rutines</h1></section>
+        <section class="act-banner reveal"><img src="Resources/rutines.png" alt="Rutines"></section>
+        <div class="act-content-grid">
+            <div class="steps-column reveal">
+                <h2>Comença la diversió!</h2>
+                <div class="steps-timeline">
+                    <div class="step-item"><div class="step-number">1</div><div class="step-info"><h5>Prepara el dia</h5><p>Col·loca el fons de les rutines i mira totes les activitats.</p></div></div>
+                    <div class="step-item"><div class="step-number">2</div><div class="step-info"><h5>Bon dia!</h5><p>Programa el teu personatge perquè vagi a la imatge d'esmorzar.</p></div></div>
+                    <div class="step-item"><div class="step-number">3</div><div class="step-info"><h5>Anem a l'escola</h5><p>Crea la seqüència per arribar fins a l'aula.</p></div></div>
+                    <div class="step-item"><div class="step-number">4</div><div class="step-info"><h5>Bona nit</h5><p>Acaba el programa a la imatge del llit per anar a dormir!</p></div></div>
+                </div>
+            </div>
+            <aside class="act-sidebar reveal">
+                <div class="sidebar-card"><h5>Recursos Mags</h5><a href="Resources/rutines.pdf" target="_blank" class="btn-download"><i data-lucide="file-text"></i>Veure PDF del Fons</a></div>
+                <div class="sidebar-card"><h5>Crèdits</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 0.5rem;">Imatges extretes de <a href="https://arasaac.org" target="_blank" style="color: var(--primary); text-decoration: underline;">ARASAAC</a>.</p>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Activitat extreta de <a href="https://projects.tactilejr.org/" target="_blank" style="color: var(--primary); text-decoration: underline;">TactileJr Projects</a>.</p>
+                </div>
+                <div class="sidebar-card"><h5>Paraules Màgiques</h5><div class="tag-list"><span class="tag-item">Dia</span><span class="tag-item">Habits</span><span class="tag-item">Temps</span><span class="tag-item">Ordre</span></div></div>
+            </aside>
+        </div>
+    </main>
+    <script>lucide.createIcons(); const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 }); document.querySelectorAll('.reveal').forEach(el => observer.observe(el));</script>
+</body>
+</html>
